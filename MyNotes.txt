@@ -1,0 +1,11 @@
+// ORM(Object Relational Mapping): Entity Framework
+   Context class
+   NuGet packages
+
+// Entitylerin propertyleri ile veritabanýnýn sütun isimlerinin ayný olmasýna dikkat et.
+
+// Core Katmaný : ortak kodlarý buraya yazýcaz. örneðin diðer projelerde bu katmaný kullanabiliriz. Core katmaný daiðer hiçbir katmaný referans almaz.
+
+// Code refactoring :  kodun iyileþtirilmesi
+
+// DTO: þimdiye kadar bir veri tabaný tablosuna ait verileri getirdik. Fakat bu tablonun iliþlili olduðu tablolara ait verileri de joinleyerek getirirebiliriz
