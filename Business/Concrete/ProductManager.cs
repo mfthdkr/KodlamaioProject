@@ -22,10 +22,15 @@ namespace Business.Concrete
         {
             _productDal = productDal;
         }
-        public List<Product> GetAll()
+        public IDataResult<List<Product>> GetAll()
         {
             // iş kodları : yetki kontrolü, if statements vs.
-            return _productDal.GetAll();
+            if (DateTime.Now.Hour == 22)
+            {
+                return new ErrorDataResult();
+            }
+
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll(),true,Messages.ProductAdded);
         }
 
         public List<Product> GetByCategoryId(int id)

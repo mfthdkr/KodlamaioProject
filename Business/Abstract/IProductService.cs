@@ -7,11 +7,11 @@ namespace Business.Abstract
     // iş kodlarını genellikle Service diye yazarız.
     public interface IProductService
     {
-        List<Product> GetAll();
-        List<Product> GetByCategoryId(int id);
-        List<Product> GetByUnitPrice(decimal min, decimal max);
-        List<ProductDetailDTO> GetProductDetails();
-        Product GetById(int productId);
+        IDataResult<List<Product>> GetAll();
+        IDataResult<List<Product>> GetByCategoryId(int id);
+        IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max);
+        IDataResult<List<ProductDetailDTO>> GetProductDetails();
+        IDataResult<Product> GetById(int productId);
         IResult Add(Product product);
     }
 }

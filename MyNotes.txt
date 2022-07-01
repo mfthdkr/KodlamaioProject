@@ -16,3 +16,4 @@
 
 // Try, Catch 
 
+// void'ler için Result, diðer dönüþ tipleri için DataResult<> oluþturduk
