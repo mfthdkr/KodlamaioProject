@@ -9,3 +9,10 @@
 // Code refactoring :  kodun iyileþtirilmesi
 
 // DTO: þimdiye kadar bir veri tabaný tablosuna ait verileri getirdik. Fakat bu tablonun iliþlili olduðu tablolara ait verileri de joinleyerek getirirebiliriz
+
+// Restful(JSon)
+
+// Result, DataResult
+
+// Try, Catch 
+
